@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Socket Application Example</string>
+    <string name="teacher">Teacher</string>
+    <string name="School">School</string>
+    <string name="send_for_teacher">Send For Teacher</string>
+    <string name="send_for_school">Send For School</string>
+    <string name="sockect_connect">Sockect Connect</string>
+    <string name="send_massage">Send Massage</string>
+    <string name="hiiiii_teacher">Hiiiii Teacher</string>
+    <string name="hello_school"> Hello School</string>
+    <string name="enter_massage">Enter Massage</string>
+    <string name="massage_data">Massage Data</string>
+
+</resources>

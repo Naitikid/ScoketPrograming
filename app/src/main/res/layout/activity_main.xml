@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/teacheridBtn"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_30dp"
+            android:layout_marginEnd="@dimen/dimens_30dp"
+            android:background="@color/blue"
+            android:text="@string/teacher"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/studentBtn"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_30dp"
+            android:background="@color/blue"
+            android:onClick="start"
+            android:text="@string/School"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/teacheridBtn"
+            app:layout_constraintStart_toStartOf="@+id/teacheridBtn"
+            app:layout_constraintTop_toBottomOf="@id/teacheridBtn" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/socketconnectBtn"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:text="@string/sockect_connect"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/dimens_32dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/studentBtn"
+            app:layout_constraintStart_toStartOf="@id/teacheridBtn"
+            app:layout_constraintEnd_toEndOf="@id/teacheridBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

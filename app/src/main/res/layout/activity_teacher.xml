@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TeacherActivity">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textforStudent"
+            android:text="@string/send_for_school"
+            android:layout_marginStart="@dimen/dimens_30dp"
+            android:layout_marginEnd="@dimen/dimens_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dimens_30dp"
+            android:textSize="@dimen/dimens_25sp"
+            android:gravity="center"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/teacherRecyclerview"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/textforStudent"
+            app:layout_constraintEnd_toEndOf="@id/textforStudent"
+            app:layout_constraintTop_toBottomOf="@id/textforStudent"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:hint="@string/enter_massage"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/chattinglayoutStudent"
+            android:layout_marginTop="@dimen/dimens_10dp"
+            app:layout_constraintStart_toStartOf="@id/textforStudent"
+            app:layout_constraintEnd_toEndOf="@id/textforStudent"
+            app:layout_constraintTop_toBottomOf="@id/teacherRecyclerview"
+            />
+
+        <TextView
+            android:id="@+id/setdatateacherdata"
+            android:layout_marginTop="@dimen/dimens_30dp"
+            android:hint="@string/massage_data"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/chattinglayoutStudent"
+            app:layout_constraintStart_toStartOf="@id/chattinglayoutStudent"
+            app:layout_constraintTop_toBottomOf="@id/chattinglayoutStudent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginTop="@dimen/dimens_30dp"
+            android:id="@+id/sendmassageteacherBtn"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/chattinglayoutStudent"
+            app:layout_constraintEnd_toEndOf="@id/chattinglayoutStudent"
+            app:layout_constraintTop_toBottomOf="@id/setdatateacherdata"
+            android:text="@string/send_massage"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
